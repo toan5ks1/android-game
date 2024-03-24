@@ -1,4 +1,4 @@
-package com.mycompany.myngdroidapp;
+package com.toan5ks1.flappybee;
 
 import android.content.Intent;
 import android.os.Bundle;

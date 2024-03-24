@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mycompany.myngdroidapp"
+    package="com.toan5ks1.flappybee"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
-        <activity android:name="com.mycompany.myngdroidapp.GameActivity"
+        <activity android:name="com.toan5ks1.flappybee.GameActivity"
             android:screenOrientation="portrait" android:configChanges="orientation" android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

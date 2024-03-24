@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-compat:28.0.0@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

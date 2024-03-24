@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: android.arch.lifecycle:livedata:1.1.1@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/b26a497baad42e6f1916e6a8b2305b29/transformed/livedata-1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/b26a497baad42e6f1916e6a8b2305b29/transformed/livedata-1.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

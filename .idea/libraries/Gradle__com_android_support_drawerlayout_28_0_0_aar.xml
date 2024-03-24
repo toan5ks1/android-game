@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:drawerlayout:28.0.0@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/1278666cf031c95a61709aad43da40d8/transformed/drawerlayout-28.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/1278666cf031c95a61709aad43da40d8/transformed/drawerlayout-28.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/transforms-3/1278666cf031c95a61709aad43da40d8/transformed/drawerlayout-28.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

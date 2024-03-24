@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NgdroidApp.iml" filepath="$PROJECT_DIR$/NgdroidApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlappyBirdClone.iml" filepath="$PROJECT_DIR$/.idea/modules/FlappyBirdClone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlappyBirdClone.app.unitTest.iml" />
     </modules>
   </component>
 </project>

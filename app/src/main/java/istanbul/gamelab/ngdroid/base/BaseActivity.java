@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 
 import istanbul.gamelab.ngdroid.core.AppManager;
 import istanbul.gamelab.ngdroid.util.Log;
-import com.mycompany.myngdroidapp.R;
+import com.toan5ks1.flappybee.R;
 
 public class BaseActivity extends Activity {
 
