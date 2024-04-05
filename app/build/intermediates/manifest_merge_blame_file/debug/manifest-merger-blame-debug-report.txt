@@ -1,0 +1,90 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.toan5ks1.floppybee"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.00" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="15"
+9-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:6:5-68
+12-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:6:22-65
+13
+14    <supports-screens
+14-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:8:5-13:36
+15        android:anyDensity="true"
+15-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:13:9-34
+16        android:largeScreens="true"
+16-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:11:9-36
+17        android:normalScreens="true"
+17-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:10:9-37
+18        android:resizeable="false"
+18-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:8:23-49
+19        android:smallScreens="false"
+19-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:9:9-37
+20        android:xlargeScreens="true" />
+20-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:12:9-37
+21
+22    <application
+22-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:15:5-40:19
+23        android:allowBackup="true"
+23-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:16:9-35
+24        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+24-->[com.android.support:support-compat:28.0.0] /Users/admin/Documents/project/Android/OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:17:9-43
+27        android:label="@string/app_name"
+27-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:18:9-41
+28        android:supportsRtl="true"
+28-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:19:9-35
+29        android:testOnly="true"
+30        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+30-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:20:9-79
+31        <activity
+31-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:21:9-31:20
+32            android:name="com.toan5ks1.floppybee.GameActivity"
+32-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:21:19-69
+33            android:configChanges="orientation"
+33-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:23:13-48
+34            android:exported="true"
+34-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:25:13-36
+35            android:screenOrientation="portrait"
+35-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:22:13-49
+36            android:theme="@style/Theme.AppCompat" >
+36-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:24:13-51
+37            <intent-filter>
+37-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:26:13-30:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:27:17-69
+38-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:27:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:29:17-77
+40-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:29:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <receiver
+44-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:32:9-39:20
+45            android:name="com.amazon.device.iap.ResponseReceiver"
+45-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:32:19-72
+46            android:exported="true"
+46-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:34:13-36
+47            android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" >
+47-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:33:13-79
+48            <intent-filter>
+48-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:35:13-38:29
+49                <action android:name="com.amazon.inapp.purchasing.NOTIFY" />
+49-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:36:17-37:72
+49-->/Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/AndroidManifest.xml:37:21-70
+50            </intent-filter>
+51        </receiver>
+52    </application>
+53
+54</manifest>

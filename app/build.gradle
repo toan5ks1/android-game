@@ -12,9 +12,9 @@ android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.toan5ks1.flappybee"
+        applicationId "com.toan5ks1.floppybee"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 33
         versionCode 1
         versionName "1.00"
     }
@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation "com.amazon.device:amazon-appstore-sdk:3.+"
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api 'com.android.support:appcompat-v7:28.0.0'
 }

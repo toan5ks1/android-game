@@ -1,0 +1,11 @@
+com.toan5ks1.floppybee.app-pngs-0 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/generated/res/pngs/debug
+com.toan5ks1.floppybee.app-resValues-1 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/generated/res/resValues/debug
+com.toan5ks1.floppybee.app-rs-2 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/generated/res/rs/debug
+com.toan5ks1.floppybee.app-mergeDebugResources-3 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.toan5ks1.floppybee.app-mergeDebugResources-4 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.toan5ks1.floppybee.app-merged_res-5 /Users/admin/Documents/project/Android/FlappyBirdClone/app/build/intermediates/merged_res/debug
+com.toan5ks1.floppybee.app-debug-6 /Users/admin/Documents/project/Android/FlappyBirdClone/app/src/debug/res
+com.toan5ks1.floppybee.app-main-7 /Users/admin/Documents/project/Android/FlappyBirdClone/app/src/main/res
+com.toan5ks1.floppybee.app-coordinatorlayout-28.0.0-8 /Users/admin/Documents/project/Android/OpenFlappyBird/gradle/wrapper/caches/transforms-3/1a5fda840f42290432b9744e9f88de4d/transformed/coordinatorlayout-28.0.0/res
+com.toan5ks1.floppybee.app-support-compat-28.0.0-9 /Users/admin/Documents/project/Android/OpenFlappyBird/gradle/wrapper/caches/transforms-3/26241e1a7189519b97829e88e7035736/transformed/support-compat-28.0.0/res
+com.toan5ks1.floppybee.app-appcompat-v7-28.0.0-10 /Users/admin/Documents/project/Android/OpenFlappyBird/gradle/wrapper/caches/transforms-3/a3def8ccbc4dfff632b708329cbfeb95/transformed/appcompat-v7-28.0.0/res

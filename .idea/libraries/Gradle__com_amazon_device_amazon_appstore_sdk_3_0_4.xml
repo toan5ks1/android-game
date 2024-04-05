@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazon.device:amazon-appstore-sdk:3.0.4" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.amazon.device" artifactId="amazon-appstore-sdk" version="3.0.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../OpenFlappyBird/gradle/wrapper/caches/modules-2/files-2.1/com.amazon.device/amazon-appstore-sdk/3.0.4/229fefa0c1e90f43f79c711173ce0591b4d77c9a/amazon-appstore-sdk-3.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

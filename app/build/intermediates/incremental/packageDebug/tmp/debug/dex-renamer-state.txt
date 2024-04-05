@@ -1,0 +1,4 @@
+#Fri Apr 05 15:58:24 ICT 2024
+base.0=/Users/admin/Documents/project/Android/FlappyBirdClone/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-ldpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/layout_activity_game.xml.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/layout/activity_game.xml"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.toan5ks1.floppybee.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.toan5ks1.floppybee.app-main-7:/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

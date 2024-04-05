@@ -2,10 +2,13 @@ package com.ngdroidapp;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Rect;
 
 import java.util.Random;
 
+import istanbul.gamelab.ngdroid.base.BaseActivity;
 import istanbul.gamelab.ngdroid.base.BaseCanvas;
 import istanbul.gamelab.ngdroid.util.Log;
 import istanbul.gamelab.ngdroid.util.Utils;
@@ -50,7 +53,16 @@ public class GameCanvas extends BaseCanvas {
     private Bitmap gameover;
     private int gameoverx, gameovery, gameoverw, gameoverh;
     private Rect godestination;
-
+    private Bitmap buyturn;
+    private int buyturnx, buyturny, buyturnw, buyturnh;
+    private Rect buydes;
+    private Bitmap upgradepre;
+    private int upgradeprex, upgradeprey, upgradeprew, upgradepreh;
+    private Rect predes;
+//    private int remainMockup; //TODO: remove
+    private Paint textPaint;
+    private String remainText;
+    private String userType;
     private Bitmap[] bird;
     private int birdanimationsize, birdanimno, birdanimationcounter;
     private int birdx, birdy, birdw, birdh;
@@ -69,9 +81,11 @@ public class GameCanvas extends BaseCanvas {
     private int score;
     private int scorex, scorey;
     private Rect scoredestination;
+    private BaseActivity gameIap;
 
     public GameCanvas(NgApp ngApp) {
         super(ngApp);
+        this.gameIap = ngApp.activity;
     }
 
     public void setup() {
@@ -113,6 +127,27 @@ public class GameCanvas extends BaseCanvas {
         gameoverx = (getUnitWidth() - gameoverw) / 2;
         gameovery = (getUnitHeight() - gameoverh) / 2;
         godestination = new Rect(gameoverx, gameovery, gameoverx + gameoverw, gameovery + gameoverh);
+
+        buyturn = Utils.loadImage(root, "buyBtn.png");
+        buyturnw = 240;
+        buyturnh = 200;
+        buyturnx = (getUnitWidth() - buyturnw) / 2 - 140;
+        buyturny = (getUnitHeight() - buyturnh) / 2 + 280;
+        buydes = new Rect(buyturnx, buyturny, buyturnx + buyturnw, buyturny + buyturnh);
+
+        upgradepre = Utils.loadImage(root, "preBtn.png");
+        upgradeprew = 240;
+        upgradepreh = 200;
+        upgradeprex = (getUnitWidth() - upgradeprew) / 2 + 140;
+        upgradeprey = (getUnitHeight() - upgradepreh) / 2 + 280;
+        predes = new Rect(upgradeprex, upgradeprey, upgradeprex + upgradeprew, upgradeprey + upgradepreh);
+
+        textPaint = new Paint();
+        textPaint.setColor(Color.WHITE); // Set text color
+        textPaint.setTextSize(48); // Set text size
+
+        revalidateRemain();
+        revalidateUserType();
 
         birdanimationsize = 3;
         birdanimno = 0;
@@ -269,13 +304,13 @@ public class GameCanvas extends BaseCanvas {
 
         birdcollision.set(birdx, birdy + birddy, birdx + birdw, birdy + birddy + birdh);
         if((birdcollision.intersect(pipedestination[currentpipeid][0]) || birdcollision.intersect(pipedestination[currentpipeid][1]) ||
-            birdcollision.intersect(pipedestination[currentpipeid == 0 ? pipecount - 1 : currentpipeid - 1][0]) || birdcollision.intersect(pipedestination[currentpipeid == 0 ? pipecount - 1 : currentpipeid - 1][1]) ||
-            birdy + birdh >= floory ||
-            birdy <= 0) &&
-            currentstate == STATE_PLAY) {
-                root.soundManager.play(SOUND_HIT);
-                root.soundManager.play(SOUND_DIE);
-                currentstate = STATE_GAMEOVER;
+                birdcollision.intersect(pipedestination[currentpipeid == 0 ? pipecount - 1 : currentpipeid - 1][0]) || birdcollision.intersect(pipedestination[currentpipeid == 0 ? pipecount - 1 : currentpipeid - 1][1]) ||
+                birdy + birdh >= floory ||
+                birdy <= 0) &&
+                currentstate == STATE_PLAY) {
+            root.soundManager.play(SOUND_HIT);
+            root.soundManager.play(SOUND_DIE);
+            currentstate = STATE_GAMEOVER;
         } else {
             birdy += birddy;
             birddy += GRAVITY;
@@ -347,6 +382,11 @@ public class GameCanvas extends BaseCanvas {
 
     private void drawGameOverScreen(Canvas canvas) {
         canvas.drawBitmap(gameover, null, godestination, null);
+        canvas.drawBitmap(buyturn, null, buydes, null);
+        canvas.drawBitmap(upgradepre, null, predes, null);
+
+        canvas.drawText(remainText, 20, 50, textPaint);
+        canvas.drawText(userType, getUnitWidth() - 220, 50, textPaint);
     }
 
     public void keyPressed(int key) {
@@ -383,10 +423,53 @@ public class GameCanvas extends BaseCanvas {
                 root.soundManager.play(SOUND_WING);
                 break;
             case STATE_GAMEOVER:
-                root.canvasManager.setCurrentCanvas(root.gc = new GameCanvas(root));
+                if(gameIap.isSubcribe()){
+                    // new game
+                    root.canvasManager.setCurrentCanvas(root.gc = new GameCanvas(root));
+                }
+                else if(isClicked(x + buyturnw, y + buyturnh, buydes)) {
+                    // Call the method when the button is clicked
+                    gameIap.onBuyOrangeClick();
+                }
+                else if(isClicked(x + upgradeprew, y + upgradepreh, predes)){
+                    gameIap.onBuyMagazineClick();
+                }
+                else {
+                    if (hasRemain()) {
+                        // new game
+                        root.canvasManager.setCurrentCanvas(root.gc = new GameCanvas(root));
+                    }
+
+                    gameIap.onEatOrangeClick();
+                }
+
                 break;
         }
     }
+    public boolean isClicked(int x, int y, Rect btn) {
+        return x >= btn.left && x <= btn.right && y >= btn.top && y <= btn.bottom;
+    }
+    public boolean hasRemain() {
+        return gameIap.getRemain() > 0;
+    }
+
+    public void revalidateRemain() {
+        remainText = "Remaining Turns: " + gameIap.getRemain();
+    }
+
+    public void revalidateUserType() {
+        boolean isSubscribe = gameIap.isSubcribe();
+        Log.i("[issub] Rmain: ", String.valueOf(isSubscribe));
+        userType = isSubscribe ? "Premium" : "Standard";
+    }
+
+//    private void buyOrangeMockup() {
+//        remainMockup++;
+//    }
+//
+//    private void eatOrangeMockup() {
+//        remainMockup--;
+//    }
 
     public void touchMove(int x, int y, int id) {
     }
@@ -401,7 +484,8 @@ public class GameCanvas extends BaseCanvas {
 
 
     public void resume() {
-
+        revalidateRemain();
+        revalidateUserType();
     }
 
 
